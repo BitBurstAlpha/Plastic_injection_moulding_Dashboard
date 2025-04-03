@@ -13,7 +13,7 @@ def show_home():
     """)
 
     # === Project Overview ===
-    st.subheader("📌 Project Overview")
+    st.subheader("📌 Overview")
     st.markdown("""
     Plastic injection molding is a key manufacturing technique where monitoring process quality is critical.  
     This tool helps operators and engineers classify production parts into:
