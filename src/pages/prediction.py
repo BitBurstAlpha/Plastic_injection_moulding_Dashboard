@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-
+import pandas as pd
 from src.components.sidebar import get_input_parameters, model_selector
 from src.utils.helpers import load_models, load_encoders, predict_quality, export_prediction
 
