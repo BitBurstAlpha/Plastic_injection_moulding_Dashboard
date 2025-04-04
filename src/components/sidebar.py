@@ -33,8 +33,8 @@ def get_input_parameters():
     injection_pressure = st.number_input("APVs - Injection pressure peak", 0.0, 5000.0, 1000.0)
     back_pressure = st.number_input("APSs - Back pressure peak", 0.0, 400.0, 100.0)
     clamping_force = st.number_input("SKs - Clamping force peak", 0.0, 2000.0, 500.0)
-    torque_mean = st.number_input("Mm - Torque mean", 0.0, 20.0, 5.0)
-    torque_peak = st.number_input("Ms - Torque peak", 0.0, 40.0, 10.0)
+    torque_mean = st.number_input("Mm - Torque mean", 0.0, 500.0, 5.0)
+    torque_peak = st.number_input("Ms - Torque peak", 0.0, 500.0, 10.0)
 
     # Timings & Volume section
     st.markdown("### ⏱️ Timings & Volume")
