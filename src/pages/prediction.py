@@ -23,6 +23,15 @@ def show_prediction():
     # Model selection
     model = models[model_name]
     
+    # Feature names expected by the model
+    feature_names = [
+        "ZUx - Cycle time", "Mold temperature", "APVs - Specific injection pressure peak value",
+        "time_to_fill", "SVo - Shot volume", "CPn - Screw position at the end of hold pressure",
+        "ZDx - Plasticizing time", "SKx - Closing force", "SKs - Clamping force peak value",
+        "APSs - Specific back pressure peak value", "Mm - Torque mean value current cycle",
+        "Ms - Torque peak value current cycle", "Melt temperature"
+    ]
+
     # Create prediction layout
     st.subheader("Selected Model: " + model_name)
     st.info("This model predicts the quality class based on the input parameters.")
@@ -30,7 +39,7 @@ def show_prediction():
     # Predict button
     if st.button("🔍 Predict Quality Class", type="primary"):
         # Prepare input data
-        input_data = np.array([[
+        input_data = pd.DataFrame([[
             inputs['cycle_time'], 
             inputs['mold_temp'], 
             inputs['injection_pressure'], 
