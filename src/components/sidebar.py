@@ -30,17 +30,17 @@ def get_input_parameters():
 
     # Pressure & Torque section
     st.markdown("### ⚙️ Pressure & Torque")
-    injection_pressure = st.number_input("APVs - Injection pressure peak", 0.0, 5000.0, 1000.0)
-    back_pressure = st.number_input("APSs - Back pressure peak", 0.0, 400.0, 100.0)
-    clamping_force = st.number_input("SKs - Clamping force peak", 0.0, 2000.0, 500.0)
-    torque_mean = st.number_input("Mm - Torque mean", 0.0, 500.0, 5.0)
-    torque_peak = st.number_input("Ms - Torque peak", 0.0, 500.0, 10.0)
+    injection_pressure = st.number_input("APVs - Specific injection pressure peak value", 0.0, 5000.0, 1000.0)
+    back_pressure = st.number_input("APSs - Specific back pressure peak value", 0.0, 400.0, 100.0)
+    clamping_force = st.number_input("SKs - Clamping force peak value", 0.0, 2000.0, 500.0)
+    torque_mean = st.number_input("Mm - Torque mean value current cycle", 0.0, 500.0, 5.0)
+    torque_peak = st.number_input("Ms - Torque peak value current cycle", 0.0, 500.0, 10.0)
 
     # Timings & Volume section
     st.markdown("### ⏱️ Timings & Volume")
-    time_to_fill = st.number_input("Time to fill", 0.0, 10.0, 2.5)
+    time_to_fill = st.number_input("time_to_fill", 0.0, 10.0, 2.5)
     shot_volume = st.number_input("SVo - Shot volume", 0.0, 2000.0, 500.0)
-    screw_position = st.number_input("CPn - Screw pos. end of hold", 0.0, 200.0, 50.0)
+    screw_position = st.number_input("CPn - Screw position at the end of hold pressure", 0.0, 200.0, 50.0)
     
     # Create a dictionary with all inputs
     inputs = {
