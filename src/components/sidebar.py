@@ -21,7 +21,7 @@ def get_input_parameters():
     st.markdown("### 🧩 Machine Parameters")
     cycle_time = st.number_input("ZUx - Cycle time", 0.0, 60.0, 15.0)
     plasticizing_time = st.number_input("ZDx - Plasticizing time", 0.0, 40.0, 10.0)
-    closing_force = st.number_input("SKx - Closing force", 0.0, 1000.0, 250.0)
+    closing_force = st.number_input("SKx - Closing force", 0.0, 2000.0, 250.0)
 
     # Temperature Settings section
     st.markdown("### 🌡️ Temperature Settings")
