@@ -5,10 +5,10 @@ def show_home():
     
      # Title and Subtitle
     st.title("🏭 Injection Molding Quality Dashboard")
+    st.subheader("Based on the **Injection Molding Quality Dataset** Random Forest is Most Accurate Classifier with 93.35% accuracy.")
     st.caption("Developed by: 4127677 | Final Year AI Coursework")
 
     st.markdown("""
-    Based on the **Injection Molding Quality Dataset** Random Forest is Most Accurate Classifier with 93.35% accuracy.,
     This interactive dashboard allows you to predict the **quality class** of plastic injection molded parts using machine learning models trained on process parameters.  
     It supports multiple classifiers, live predictions, model comparisons, and performance visualizations.
     """)
